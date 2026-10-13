@@ -1,0 +1,9 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- PLACEHOLDER: replace with your own line-drawn sketch (primary colour version) -->
+  <g stroke="#6A0C06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M500 170c-92 0-158 70-158 168 0 70 30 128 76 160-6 30-24 52-60 66-92 36-150 96-170 196"/>
+    <path d="M500 170c92 0 158 70 158 168 0 70-30 128-76 160 6 30 24 52 60 66 92 36 150 96 170 196"/>
+    <path d="M430 330c20-14 44-14 64 0M530 330c20-14 44-14 64 0" stroke-width="5"/>
+    <path d="M470 430c22 16 58 16 80 0" stroke-width="5"/>
+  </g>
+</svg>
