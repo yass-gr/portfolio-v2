@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Tokens copied from the reference (mijobello.com) so the rebuild matches it 1:1. */
+@theme {
+  --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
+
+  --color-brand-primary: #6a0c06;
+  --color-brand-cream: #b2c7ab;
+  --color-brand-dark: #1a1512;
+
+  --tracking-heading: -0.06em;
+  --tracking-body: 0.02em;
+
+  --animate-marquee: marquee 26s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0);
+    }
+    to {
+      transform: translate(-50%);
+    }
+  }
+}
+
+/* Dark theme is an inversion: the two brand colours swap. */
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  --color-brand-cream: #6a0c06;
+  --color-brand-primary: #b2c7ab;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-brand-cream);
+    color-scheme: light;
+    scroll-behavior: auto;
+    scrollbar-gutter: stable;
+    scrollbar-color: var(--color-brand-primary) var(--color-brand-cream);
+  }
+
+  body {
+    background-color: var(--color-brand-cream);
+    color: var(--color-brand-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-brand-primary);
+    color: var(--color-brand-cream);
+  }
+}
